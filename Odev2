@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Odev2{
+
+public static void main (Strings [] args){
+
+	// Fiyat al, % 18 KDV  hesapla, KDV ve yeni fiyatı hesapla, bas
+
+Scanner sc= new Scanner (System.in);
+
+System.out.println("Fiyatı giriniz: ");
+
+double fiyat= sc.nextDouble();
+
+System.out.println("KDV'siz fiyat: "+fiyat);
+
+double kdvtutari=fiyat*0.18;
+
+double yeniFiyat=fiyat+kdvtutari;
+
+System.out.println("KDV'li fiyat: "+ yeniFiyat);
+
+System.out.println("KDV tutarı: "+kdvtutari);
+
+
+
+
+}
+
+}
