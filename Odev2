@@ -4,17 +4,21 @@ public class Odev2{
 
 public static void main (Strings [] args){
 
-	// Fiyat al, % 18 KDV  hesapla, KDV ve yeni fiyatı hesapla, bas
+		// Fiyat al, % 18 KDV  hesapla, KDV ve yeni fiyatı hesapla, bas
 
+double kdvorani=0;
 Scanner sc= new Scanner (System.in);
 
 System.out.println("Fiyatı giriniz: ");
 
 double fiyat= sc.nextDouble();
 
+if (0<=fiyat && fiyat<=1000) {kdvorani=0.18;}
+else if (fiyat>1000) {kdvorani=0.08;}
+
 System.out.println("KDV'siz fiyat: "+fiyat);
 
-double kdvtutari=fiyat*0.18;
+double kdvtutari=fiyat*kdvorani;
 
 double yeniFiyat=fiyat+kdvtutari;
 
