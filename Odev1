@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Odev1 {
+
+	public static void main(String[] args) {
+		// Kullanıcıdan not al, ortalama hesapla, sınıfı geçip geçmediğini denetle
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Matematik notunuzu girin: ");
+		double matematik=sc.nextDouble();
+		
+		System.out.println("Fizik notunuzu girin: ");
+		double fizik=sc.nextDouble();
+		
+		System.out.println("Kimya notunuzu girin: ");
+		double kimya=sc.nextDouble();
+		
+		System.out.println("Türkçe notunuzu girin: ");
+		double turkce=sc.nextDouble();
+		
+		System.out.println("Tarih notunuzu girin: ");
+		double tarih=sc.nextDouble();
+    
+    System.out.println("Müzik notunuzu girin: ");
+		double muzik=sc.nextDouble();
+    
+    double ortalama= (matematik+fizik+kimya+turkce+tarih+muzik)/6;
+    
+    String sonuc=(ortalama>=50)? "Sınıfı geçtiniz":"Sınıfta kaldınız";
+    
+    System.out.format("Ortalamanız: %.2f; buna göre %s", ortalama, sonuc );
+    
+
+	}
+
+}
