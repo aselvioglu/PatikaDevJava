@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Odev3 {
+
+	public static void main(String[] args) {
+		// uc kenarı verilmiş üçgenin alanını hesapla
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("İlk kenar uzunluğunu giriniz: ");
+		double ilkKenar=sc.nextDouble();
+		
+		System.out.println("İkinci kenar uzunluğunu giriniz: ");
+		double ikinciKenar=sc.nextDouble();
+		
+		System.out.println("Üçüncü kenar uzunluğunu giriniz: ");
+		double ucuncuKenar=sc.nextDouble();
+		
+		double u=(ilkKenar+ikinciKenar+ucuncuKenar)/2;
+		
+		double alanKare=u*(u-ilkKenar)*(u-ikinciKenar)*(u-ucuncuKenar);
+		double alan=Math.pow(alanKare, 0.5);
+		System.out.println("Ucgenin alanı: "+alan);
+	
+
+	}
+
+}
