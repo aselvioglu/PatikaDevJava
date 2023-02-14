@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	// Daire alanı ve çevresi hesapla, kullanıcıdan yarıçap alanı
+	
+	Scanner sc = new Scanner (System.in);
+	System.out.println("Yarıçapı giriniz: ");
+	double yaricap=sc.nextDouble();
+	
+	double PI=Math.PI;
+	
+	double alan = Math.pow(yaricap,2)*PI;
+	
+	double cevre = 2*yaricap*PI;
+	
+    System.out.println("Dairenin alanı: "+ alan+ " ve çevresi: " + cevre);
+    
+    // merkez açısı a olan daire diliminin alanı
+    System.out.println("Merkez açıyı giriniz: ");
+    double aci=sc.nextDouble();
+    boolean dogru = true;
+    while (dogru){
+        if(aci<0||aci>360) {dogru=true;
+        System.out.println("merkez açı 0 ile 360 arasında olmalı, yeniden giriniz: ");
+            aci=sc.nextDouble();
+        }
+        else {dogru=false;}
+        
+    }
+    double dilimAlan=alan*aci/360;
+    
+    System.out.println("Daire dilimi alanı: "+ dilimAlan);
+	
+	}
+}
