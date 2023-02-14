@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	// Vücut kitle endeksi hesaplar, kullanıcıdan metre olarak boy, kilogram olarak ağırlık alır
+	
+	
+	
+	Scanner sc = new Scanner (System.in);
+	System.out.println("Boyunuzu metre cinsinden giriniz: ");
+	double boy=sc.nextDouble();
+	
+	
+	System.out.println("Ağırlığınızı kilogram cinsinden giriniz: ");
+	double agirlik=sc.nextDouble();
+    
+	double vKitleEndeksi = agirlik/(boy*boy);
+	
+	System.out.println("Vücut kitle endeksiniz: " + vKitleEndeksi);
+    
+   	}
+}
