@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	// Vücut kitle endeksi hesaplar, kullanıcıdan metre olarak boy, kilogram olarak ağırlık alır
+	
+	
+	
+	Scanner sc = new Scanner (System.in);
+	System.out.println("Kaç kilo armut satın aldınız: ");
+	double armut=sc.nextDouble();
+	
+	
+	System.out.println("Kaç kilo elma satın aldınız: ");
+	double elma=sc.nextDouble();
+	
+	System.out.println("Kaç kilo domates satın aldınız: ");
+	double domates=sc.nextDouble();
+	
+	System.out.println("Kaç kilo muz satın aldınız: ");
+	double muz=sc.nextDouble();
+	
+	System.out.println("Kaç kilo patlican satın aldınız: ");
+	double patlican=sc.nextDouble();
+	
+	double armutFiyat=2.14;
+	double elmaFiyat=3.76;
+	double domatesFiyat=1.11;
+	double muzFiyat=0.95;
+	double patlicanFiyat=5.00;
+	
+	double toplamTutar=armutFiyat*armut+elmaFiyat*elma+domatesFiyat*domates+muzFiyat*muz+patlicanFiyat*patlican;
+	
+	System.out.println("Satın alınan armut miktarı: "+ armut );
+	System.out.println("Satın alınan elma miktarı: "+ elma);
+	System.out.println("Satın alınan domates miktarı: "+ domates);
+	System.out.println("Satın alınan muz miktarı: "+ muz);
+	System.out.println("Satın alınan patlıcan miktarı: "+ patlican);
+	
+	System.out.println("Toplam tutar: "+toplamTutar);
+	
+    
+   	}
+}
