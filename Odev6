@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-	// Vücut kitle endeksi hesaplar, kullanıcıdan metre olarak boy, kilogram olarak ağırlık alır
+	// Manav alışveriş listesi toplam tutarı hesaplar
 	
 	
 	
