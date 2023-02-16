@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Odev8 {
+
+	public static void main(String[] args) {
+		// Sifre sifirlama
+		
+		String userName, password, yenileme, yenipassword;
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Kullanıcı adınız: ");
+		
+		userName=sc.nextLine();
+		
+		System.out.println("Sifreniz: ");
+		
+		password=sc.nextLine();
+		if(userName.equals("patika")&&password.equals("2345")) {System.out.println("Merhaba!");}
+		else if(userName.equals("patika")&&!password.equals("2345")) {System.out.println("Şifrenizi yanlış girdiniz, şifrenizi sıfırlamak ister misiniz: evet için E ya da e, hayır için H ya da h giriniz");}
+			yenileme=sc.nextLine();
+			if(yenileme.equals("E") ||yenileme.equals("e")){
+				System.out.println("Yeni sifrenizi giriniz:");
+				yenipassword=sc.nextLine();
+				if(yenipassword.equals("2345")||yenipassword.equals(password)) {
+					System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz: ");
+				}else {System.out.println("Şifrenizi başarı ile oluşturdunuz");}
+				
+			}
+else {System.out.println("Kullanıcı adı ya da şifreniz hatalı, bilgilerinizi yeniden giriniz. ");}	} 
+		
+			
+			
+			
+	
+		
+		
+		
+
+	}
+
