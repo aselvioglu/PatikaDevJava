@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Odev7 {
+
+	public static void main(String[] args) {
+		// switch-case yapısı ile hesap makinesi
+		
+		int n1, n2, islem;
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("İlk sayıyı giriniz: ");
+		
+		n1=sc.nextInt();
+		
+		System.out.println("İkinci sayıyı giriniz: ");
+		
+		n2=sc.nextInt();
+		
+		System.out.println("Toplama: 1\n Çıkarma: 2\n Çarpma: 3\n Bölme: 4");
+		
+		islem=sc.nextInt();
+		
+		switch(islem) {
+			case 1:
+				System.out.println("Sonuc: "+ (n1+n2));
+				break;
+			case 2: 
+				System.out.println("Sonuc: "+ (n1-n2));
+				break;
+			case 3: 
+				System.out.println("Sonuc: "+ (n1*n2));
+				break;
+			case 4: 
+				if(n2==0) {System.out.println("Bir sayı sıfıra bölünemez, ikinci sayı sıfırdan farklı olmalı ");}
+				else {System.out.println("Sonuc: "+((double)(n1)/n2));}
+				break;
+			default:
+				System.out.println("Yanlış bir islem numarası girdiniz, tekrar deneyiniz.");}
+				
+	
+	
+	
+	}
+
+}
